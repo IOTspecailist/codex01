@@ -6,7 +6,7 @@ class HelloHandler(BaseHTTPRequestHandler):
             self.send_response(200)
             self.send_header('Content-type', 'text/html; charset=utf-8')
             self.end_headers()
-            self.wfile.write(b"hellow")
+            self.wfile.write(b"what's up")
         else:
             self.send_error(404, 'Not Found')
 
